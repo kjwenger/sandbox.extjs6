@@ -17,13 +17,13 @@ Ext.define('sandbox.extjs6.controller.Routes', {
         'users': 'onUsers'
     },
     init: function () {
-        console.log('~.controller.Routes.init()');
+        /* trace                                                              */ console.log('~.controller.Routes.init()');
     },
     launch: function() {
-        console.log('~.controller.Routes.launch()');
+        /* trace                                                              */ console.log('~.controller.Routes.launch()');
     },
     onUsers: function () {
-        console.log('~.controller.Routes.onUsers()');
+        /* trace                                                              */ console.log('~.controller.Routes.onUsers()');
         var appMain = this.getAppMain(),
             users = this.getUsers();
         appMain.setActiveItem(users);
