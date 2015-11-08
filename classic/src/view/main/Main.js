@@ -100,7 +100,7 @@ Ext.define('sandbox.extjs6.view.main.Main', {
     }, {
         title: 'Help',
         route: 'help',
-        iconCls: 'fa-help',
+        iconCls: 'fa-life-saver',
         bind: {
             html: '{loremIpsum}'
         }
