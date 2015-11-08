@@ -11,18 +11,10 @@ Ext.define('sandbox.extjs6.controller.Routes', {
     ],
     config: {
         refs: {
-            appMain: 'app-main',
-            home: 'app-main container[name="home"]',
-            users: 'app-main container[name="users"]',
-            groups: 'app-main container[name="groups"]',
-            settings: 'app-main container[name="settings"]'
+            appMain: 'app-main'
         }
     },
     routes: {
-        'home': 'onHome',
-        'users': 'onUsers',
-        'groups': 'onGroups',
-        'settings': 'onSettings',
         ':route': 'onRoute'
     },
     init: function () {
@@ -30,22 +22,6 @@ Ext.define('sandbox.extjs6.controller.Routes', {
     },
     launch: function() {
         /* trace                                                              */ console.log('~.controller.Routes.launch()');
-    },
-    onHome: function () {
-        /* trace                                                              */ console.log('~.controller.Routes.onUsers()');
-        this.enRoute(this.getHome());
-    },
-    onUsers: function () {
-        /* trace                                                              */ console.log('~.controller.Routes.onUsers()');
-        this.enRoute(this.getUsers());
-    },
-    onGroups: function () {
-        /* trace                                                              */ console.log('~.controller.Routes.onUsers()');
-        this.enRoute(this.getGroups());
-    },
-    onSettings: function () {
-        /* trace                                                              */ console.log('~.controller.Routes.onUsers()');
-        this.enRoute(this.getSettings());
     },
     onRoute: function (route) {
         /* trace                                                              */ console.log('~.controller.Routes.onRoute()');
