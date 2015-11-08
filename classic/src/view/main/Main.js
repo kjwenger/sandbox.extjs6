@@ -77,7 +77,7 @@ Ext.define('sandbox.extjs6.view.main.Main', {
 
     items: [{
         title: 'Home',
-        name: 'home',
+        route: 'home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
@@ -85,21 +85,28 @@ Ext.define('sandbox.extjs6.view.main.Main', {
         }]
     }, {
         title: 'Users',
-        name: 'users',
+        route: 'users',
         iconCls: 'fa-user',
         bind: {
             html: '{loremIpsum}'
         }
     }, {
         title: 'Groups',
-        name: 'groups',
+        route: 'groups',
         iconCls: 'fa-users',
         bind: {
             html: '{loremIpsum}'
         }
     }, {
+        title: 'Help',
+        route: 'help',
+        iconCls: 'fa-help',
+        bind: {
+            html: '{loremIpsum}'
+        }
+    }, {
         title: 'Settings',
-        name: 'settings',
+        route: 'settings',
         iconCls: 'fa-cog',
         bind: {
             html: '{loremIpsum}'
