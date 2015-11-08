@@ -100,6 +100,8 @@ Ext.define('sandbox.extjs6.view.main.Main', {
     }, {
         title: 'Help',
         route: 'help',
+                                                                                // http://fortawesome.github.io/Font-Awesome/icons/
+                                                                                // https://docs.sencha.com/extjs/6.0/core_concepts/font_ext.html
         iconCls: 'fa-life-saver',
         bind: {
             html: '{loremIpsum}'
