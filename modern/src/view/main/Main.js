@@ -51,6 +51,15 @@ Ext.define('sandbox.extjs6.view.main.Main', {
                 html: '{loremIpsum}'
             }
         },{
+            title: 'Help',
+            route: 'help',
+                                                                                // http://fortawesome.github.io/Font-Awesome/icons/
+                                                                                // https://docs.sencha.com/extjs/6.0/core_concepts/font_ext.html
+            iconCls: 'x-fa fa-life-saver',
+            bind: {
+                html: '{loremIpsum}'
+            }
+        }, {
             title: 'Settings',
             iconCls: 'x-fa fa-cog',
             bind: {
